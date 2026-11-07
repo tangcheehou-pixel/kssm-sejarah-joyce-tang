@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>正在进入 KSSM Sejarah 专属路由...</title>
+  <script>
+    (function() {
+      var base = '/kssm-sejarah-joyce-tang';
+      var p = window.location.pathname || '';
+      if (p.indexOf(base) === 0) p = p.slice(base.length);
+      if (!p || p === '/') p = '/portal/joyce-tang';
+      window.location.replace(base + '/#' + p + (window.location.search || ''));
+    })();
+  </script>
+</head>
+<body></body>
+</html>
