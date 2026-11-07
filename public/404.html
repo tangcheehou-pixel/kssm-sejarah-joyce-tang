@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KSSM Sejarah Tingkatan 3 — Mengalihkan...</title>
+    <script>
+      (function () {
+        var base = '/kssm-sejarah-joyce-tang';
+        var path = window.location.pathname || '';
+        var sub = path.indexOf(base) === 0 ? path.slice(base.length) : path;
+        if (!sub || sub === '/') sub = '/portal/joyce-tang';
+        window.location.replace(
+          window.location.origin + base + '/#' + sub + window.location.search
+        );
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
